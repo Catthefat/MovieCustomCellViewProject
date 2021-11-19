@@ -14,6 +14,10 @@
 		C93794AE2746CF9400E928B5 /* CustomCellViewProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C93794AC2746CF9400E928B5 /* CustomCellViewProject.xcdatamodeld */; };
 		C93794B02746CF9900E928B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93794AF2746CF9900E928B5 /* Assets.xcassets */; };
 		C93794B32746CF9900E928B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93794B12746CF9900E928B5 /* LaunchScreen.storyboard */; };
+		C93794BF2746D15F00E928B5 /* CellUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93794BE2746D15F00E928B5 /* CellUITableViewController.swift */; };
+		C93794C12746D25700E928B5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93794C02746D25700E928B5 /* DataManager.swift */; };
+		C93794C32746D29700E928B5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93794C22746D29700E928B5 /* Movie.swift */; };
+		C93794C52746D73B00E928B5 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93794C42746D73B00E928B5 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		C93794AF2746CF9900E928B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C93794B22746CF9900E928B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C93794B42746CF9900E928B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C93794BE2746D15F00E928B5 /* CellUITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellUITableViewController.swift; sourceTree = "<group>"; };
+		C93794C02746D25700E928B5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C93794C22746D29700E928B5 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		C93794C42746D73B00E928B5 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,52 @@
 		C93794A22746CF9400E928B5 /* CustomCellViewProject */ = {
 			isa = PBXGroup;
 			children = (
-				C93794A32746CF9400E928B5 /* AppDelegate.swift */,
-				C93794A52746CF9400E928B5 /* SceneDelegate.swift */,
-				C93794A72746CF9400E928B5 /* ViewController.swift */,
-				C93794A92746CF9400E928B5 /* Main.storyboard */,
+				C93794BD2746D04B00E928B5 /* Modal */,
+				C93794BB2746CFF600E928B5 /* View */,
+				C93794BC2746D03200E928B5 /* Controller */,
+				C93794BA2746CFE300E928B5 /* AppDelegate */,
 				C93794AF2746CF9900E928B5 /* Assets.xcassets */,
-				C93794B12746CF9900E928B5 /* LaunchScreen.storyboard */,
 				C93794B42746CF9900E928B5 /* Info.plist */,
 				C93794AC2746CF9400E928B5 /* CustomCellViewProject.xcdatamodeld */,
 			);
 			path = CustomCellViewProject;
+			sourceTree = "<group>";
+		};
+		C93794BA2746CFE300E928B5 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C93794A32746CF9400E928B5 /* AppDelegate.swift */,
+				C93794A52746CF9400E928B5 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C93794BB2746CFF600E928B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C93794B12746CF9900E928B5 /* LaunchScreen.storyboard */,
+				C93794A92746CF9400E928B5 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C93794BC2746D03200E928B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C93794A72746CF9400E928B5 /* ViewController.swift */,
+				C93794BE2746D15F00E928B5 /* CellUITableViewController.swift */,
+				C93794C42746D73B00E928B5 /* MovieTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C93794BD2746D04B00E928B5 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				C93794C02746D25700E928B5 /* DataManager.swift */,
+				C93794C22746D29700E928B5 /* Movie.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93794C32746D29700E928B5 /* Movie.swift in Sources */,
 				C93794A82746CF9400E928B5 /* ViewController.swift in Sources */,
+				C93794C12746D25700E928B5 /* DataManager.swift in Sources */,
 				C93794A42746CF9400E928B5 /* AppDelegate.swift in Sources */,
+				C93794BF2746D15F00E928B5 /* CellUITableViewController.swift in Sources */,
 				C93794A62746CF9400E928B5 /* SceneDelegate.swift in Sources */,
+				C93794C52746D73B00E928B5 /* MovieTableViewCell.swift in Sources */,
 				C93794AE2746CF9400E928B5 /* CustomCellViewProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
